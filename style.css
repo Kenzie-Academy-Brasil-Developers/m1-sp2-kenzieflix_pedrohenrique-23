@@ -1,16 +1,64 @@
-body{
-    font-family: 'Helvetica Neue' ,Helvetica, Arial, sans-serif;
+html{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: black;
-}
 
+}
 h1{
     color: white;
 }
 
-p{
-    color: grey;
+.logo{
+   text-align: center;
+}
+.box-cards{
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+}
+.cards{
+    border-radius: 20px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: center;
+  
+}
+.box-cards:hover .cards{
+    border: white 2px solid;
+}
+.box-cards:hover .usuario{
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.usuario{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+    
+}
+.centralizar{
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
 }
 button{
-    color: white;
     background-color: black;
+    color: white;
+    border: solid 2px white;
+    width: 150px;
+    height: 50px;
+}
+.watch{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    
 }
