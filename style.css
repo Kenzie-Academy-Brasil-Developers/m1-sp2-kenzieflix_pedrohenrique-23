@@ -1,8 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
 html{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: black;
-
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    justify-content: center;
+    height: 100vh;
+}
+
 h1{
     color: white;
 }
@@ -10,55 +24,57 @@ h1{
 .logo{
    text-align: center;
 }
-.box-cards{
+.cards{
     align-items: center;
     text-align: center;
-    display: inline-block;
-    justify-content: center;
-}
-.cards{
-    border-radius: 20px solid black;
-    width: 200px;
-    height: 200px;
     display: flex;
-    justify-content: center;
-    margin-left: 40px;
-    text-align: center;
+    flex-direction: column;
+    width: 20%;
+    gap: 2vh;
+    
+}
+.cards-img{
+    border-radius: 10px;
+    width: 100%;
+    
   
 }
-.box-cards:hover .cards{
+.cards:hover .cards-img{
     border: white 2px solid;
 }
-.box-cards:hover .usuario{
+.cards:hover .cards-usuario{
     color: white;
 }
 button:hover{
     background-color: white;
     color: black;
 }
-.usuario{
+.cards-usuario{
     color: gray;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: 40px;
-    
+
 }
 .centralizar{
     align-items: center;
     text-align: center;
     margin-top: 100px;
 }
-button{
+.botao{
+    font-size: 20px;
     background-color: black;
     color: white;
-    border: solid 2px white;
-    width: 150px;
+    border-radius: 5px;
+    border: solid 2px;
+    width: 200px;
     height: 50px;
 }
 .watch{
+    width: 1000px;
     margin-top: 50px;
-    align-items: center;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
     
 }
